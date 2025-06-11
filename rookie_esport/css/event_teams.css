@@ -1,0 +1,179 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #04060f;
+    color: white;
+}
+
+.content-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.form-section {
+    background-color: #04060f;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+    color: white;
+}
+
+.back-btn {
+    background-color: #07339a;
+    border-color: #07339a;
+}
+
+.back-btn:hover {
+    background-color: #041f5e;
+    border-color: #041f5e;
+}
+
+.form-container {
+    padding: 20px;
+    background-color: #04143b;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.form-container p {
+    margin-bottom: 15px;
+}
+
+.form-container label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.form-container select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: 1px solid #1c3a56;
+    background-color: white;
+    color: #04143b;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.form-container select:focus {
+    outline: none;
+    border-color: #07339a;
+    box-shadow: 0 0 5px rgba(7, 51, 154, 0.5);
+}
+
+.form-container button {
+    width: 100%;
+    background-color: #07339a;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.form-container button:hover {
+    background-color: #041f5e;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.table-wrapper h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #072443;
+}
+
+th {
+    background-color: #041f5e;
+    color: white;
+    font-weight: 600;
+}
+
+td {
+    background-color: #04143b;
+    color: white;
+}
+
+.delete-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #dc3545;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.no-data {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+    font-style: italic;
+}
+
+@media (max-width: 828px) {
+    .content-container {
+        padding: 15px;
+    }
+
+    .form-container {
+        margin-top: 10px;
+    }
+}

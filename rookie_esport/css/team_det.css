@@ -1,0 +1,162 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #04060f;
+    color: white;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.btn.back-btn {
+    background-color: #07339a;
+    border-color: #07339a;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+    color: white;
+    margin-top: 20px;
+}
+
+.btn.back-btn:hover {
+    background-color: #041f5e;
+    border-color: #041f5e;
+}
+
+.team-title {
+    font-size: 28px;
+    margin: 15px 0 10px;
+}
+
+.game-title {
+    font-size: 18px;
+    margin: 0 0 20px;
+    color: #99a1b3;
+}
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section {
+    background-color: #04143b;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.section h2 {
+    color: white;
+    margin: 0 0 20px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.data-table th,
+.data-table td {
+    padding: 12px;
+    border: 1px solid #072443;
+}
+
+.data-table th {
+    background-color: #041f5e;
+    color: white;
+    font-weight: 600;
+}
+
+.data-table td {
+    background-color: #04143b;
+    color: white;
+}
+
+.section:first-child .data-table,
+.section:first-child .data-table th,
+.section:first-child .data-table td {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.section:not(:first-child) .data-table th:first-child,
+.section:not(:first-child) .data-table td:first-child {
+    width: 30%;
+    text-align: center;
+}
+
+.section:not(:first-child) .data-table th:nth-child(2),
+.section:not(:first-child) .data-table td:nth-child(2) {
+    width: 20%;
+    text-align: center;
+}
+
+.section:not(:first-child) .data-table th:last-child,
+.section:not(:first-child) .data-table td:last-child {
+    width: 50%;
+    text-align: center;
+}
+
+#game-title {
+    font-size: 20px;
+    margin: 0 0 20px;
+    color: white;
+    font-weight: bold;
+}
+
+p {
+    text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .btn.back-btn {
+        margin-bottom: 30px; 
+    }
+
+    .main-container {
+        padding: 15px;
+    }
+    
+    .section {
+        padding: 15px;
+    }
+    
+    .section:not(:first-child) .data-table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .data-table th,
+    .data-table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+    
+    .team-title {
+        font-size: 24px;
+    }
+    
+    .game-title {
+        font-size: 16px;
+    }
+}

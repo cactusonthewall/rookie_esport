@@ -1,0 +1,131 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #04060f;
+    color: white;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #07339a;
+}
+
+a:hover {
+    color: #041f5e;
+}
+
+a:active {
+    color: #04143b;
+}
+
+a:visited {
+    color: #072443;
+}
+
+a.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 30px;
+    background-color: #07339a;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+a.btn:hover {
+    background-color: #041f5e;
+    border-color: #041f5e;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.team-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.team-card {
+    background-color: #04143b;
+    color: white;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.team-card:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.team-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.team-btn-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.team-btn-container .btn {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #07339a;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.team-btn-container .btn:hover {
+    background-color: #041f5e;
+    transform: scale(1.05);
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .team-card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-card {
+        width: 80%;
+    }
+
+    .team-btn-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-btn-container .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

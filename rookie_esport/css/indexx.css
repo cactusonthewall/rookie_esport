@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../asset/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-color: #04060f;
+}
+
+.container {
+    background: rgba(4, 31, 94, 0.15);
+    border: 3px solid rgba(7, 51, 154, 0.3);
+    padding: 30px;
+    border-radius: 16px;
+    backdrop-filter: blur(25px);
+    text-align: center;
+    color: white;
+    width: 600px;
+    box-shadow: 0px 0px 20px 10px rgba(4, 20, 59, 0.15);
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #07339a;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 99px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #04143b;
+}
+
+.guest-container {
+    margin-top: 20px;
+}
+
+.guest-container .btn {
+    background: #051d67;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 25px;
+}
+
+.guest-container .btn:hover {
+    background: #04143b;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .guest-container .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
